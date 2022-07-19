@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:audio_player_test/assets/app_colors.dart';
 import 'package:audio_player_test/audio_player_file.dart';
-import 'package:audio_player_test/services/playlist_service.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

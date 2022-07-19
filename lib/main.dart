@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:audio_player_test/models/playlist.dart';
-import 'package:audio_player_test/services/playlist_service.dart';
 import 'package:audio_player_test/views/play_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,7 +8,6 @@ import 'package:flutter/services.dart';
 import 'views/home_screen.dart';
 
 void main() async{
-  //Playlist playlist=PlaylistService().playlist;
   runApp( MyApp());
 }
 
@@ -21,8 +19,7 @@ class MyApp extends StatelessWidget{
     final response=jsonDecode(jsonString);
     return Playlist.fromJson(response);
   }
-  
-  //MyApp(this.playlist);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
